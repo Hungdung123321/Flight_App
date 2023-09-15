@@ -1,11 +1,11 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import { GoldmanTitleText, InriaSmallText, InriaSmallTitleText, SnesTitleText, StyledView } from '../../components/ReactCores/ReactCoreStyled'
 
 const Home = () => {
     return (
-        <View>
-            <Text>Home</Text>
-        </View>
+        <StyledView>
+
+        </StyledView>
     )
 }
 

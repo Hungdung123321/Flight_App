@@ -1,5 +1,6 @@
 import { styled } from "nativewind";
 import { Text, View, TouchableOpacity, Image, TextInput, FlatList, ScrollView } from "react-native";
+import styles from "./style";
 
 // React core styled
 export const StyledText = styled(Text)
@@ -11,8 +12,9 @@ export const StyledFlatList = styled(FlatList)
 export const StyledScrollView = styled(ScrollView)
 
 // fonts
-export const Heading3 = styled(Text, 'font-nomal text-xl')
-export const Heading4 = styled(Text, 'font-medium text-xl')
-export const Heading5 = styled(Text, 'font-medium text-base')
-export const TextBodyMedium = styled(Text, 'font-medium text-sm')
-export const TextBodySmall = styled(Text, 'font-normal text-base')
+export const SnesTitleText = styled(Text, "font-SnesItalic text-3xl text-white")
+export const GoldmanTitleText = styled(Text, "font-GoldmanBold text-4xl text-white")
+export const InriaSmallTitleText = styled(Text, "font-InriaSans[InriaSans-Bold] text-lg text-white")
+export const InriaSmallText = styled(Text, "font-InriaSans[InriaSans-Light] text-base text-white")
+
+

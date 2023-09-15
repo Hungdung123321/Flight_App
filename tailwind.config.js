@@ -6,6 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        SnesItalic: ["SnesItalic"],
+        GoldmanBold: ['Goldman-Bold'],
+        InriaSans: ['InriaSans-Regular', 'InriaSans-Bold', 'InriaSans-Light'],
+      },
       spacing: {
         '0.375': '6px',
         '0.5': '8px',
@@ -26,7 +31,7 @@ module.exports = {
         '9': '148px',
         '10': '154px',
         '10.5': '168px',
-        '11': '170px',
+        '11': '176px',
         '12': '186px',
         '14': '210px',
         '18': '288px',
