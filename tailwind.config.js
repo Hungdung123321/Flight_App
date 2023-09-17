@@ -7,9 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        SnesItalic: ["SnesItalic"],
-        GoldmanBold: ['Goldman-Bold'],
-        InriaSans: ['InriaSans-Regular', 'InriaSans-Bold', 'InriaSans-Light'],
+        Inter: ['Inter-Bold', 'Inter-Medium', 'Inter-Regular', 'Inter-SemiBold'],
       },
       spacing: {
         '0.375': '6px',
@@ -43,9 +41,9 @@ module.exports = {
       colors: {
         'white': '#ffffff',
         'light-gray': '#EFEFEF',
-        'gray': '#D8D8D8',
-        'brilliant_azure': '#46A5FF',
+        'gray': '#555555',
         'dark-gray': '#5A5A5A',
+        'Raisin-black': '#1E1F24',
       },
     },
 

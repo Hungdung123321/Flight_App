@@ -1,19 +1,21 @@
 import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createDrawerNavigator } from '@react-navigation/drawer'
-import HomeNavigator from './utils/HomeNavigator'
 import { NAVIGATOR } from './routes'
-import { COLORS } from '../constants/colors'
+import AuthenticationNavigator from './utils/AuthenticationNavigator'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import { StatusBar } from 'react-native'
 
 const MainRoute = () => {
 
-    const Drawer = createDrawerNavigator()
+    const Drawer = createDrawerNavigator();
+    const Stack = createNativeStackNavigator();
 
     return (
         <NavigationContainer >
-            <Drawer.Navigator screenOptions={{ headerShown: true }}>
-                <Drawer.Screen name={NAVIGATOR.HOME} component={HomeNavigator} />
-            </Drawer.Navigator>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+                <Stack.Screen name={NAVIGATOR.AUTH} component={AuthenticationNavigator} />
+            </Stack.Navigator>
         </NavigationContainer>
     )
 }

@@ -1,0 +1,1 @@
+export { default as AppTabView } from './AppTabView'

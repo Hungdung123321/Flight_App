@@ -8,8 +8,9 @@ import { StyledView } from './src/components/ReactCores/ReactCoreStyled'
 const App = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <StyledView className='flex-1 bg-black'>
-        <StatusBar translucent />
+      <StyledView className='flex-1'>
+        <StatusBar translucent backgroundColor={'transparent'} barStyle={'dark-content'} />
+
         <MainRoute />
       </StyledView>
     </GestureHandlerRootView>

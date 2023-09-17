@@ -3,5 +3,4 @@ export const COLORS = {
     BRILLIANT_AZURE: '#46A5FF',
     BLACK: '#000000',
     RAISIN_BLACK: '#232323',
-
 }

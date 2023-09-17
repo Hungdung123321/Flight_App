@@ -53,15 +53,10 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Goldman-Bold.ttf</string>
-		<string>Goldman-Regular.ttf</string>
-		<string>InriaSans-Bold.ttf</string>
-		<string>InriaSans-BoldItalic.ttf</string>
-		<string>InriaSans-Italic.ttf</string>
-		<string>InriaSans-Light.ttf</string>
-		<string>InriaSans-LightItalic.ttf</string>
-		<string>InriaSans-Regular.ttf</string>
-		<string>SnesItalic.ttf</string>
+		<string>Inter-Bold.ttf</string>
+		<string>Inter-Medium.ttf</string>
+		<string>Inter-Regular.ttf</string>
+		<string>Inter-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>

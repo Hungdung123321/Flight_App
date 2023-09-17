@@ -12,9 +12,9 @@ export const StyledFlatList = styled(FlatList)
 export const StyledScrollView = styled(ScrollView)
 
 // fonts
-export const SnesTitleText = styled(Text, "font-SnesItalic text-3xl text-white")
-export const GoldmanTitleText = styled(Text, "font-GoldmanBold text-4xl text-white")
-export const InriaSmallTitleText = styled(Text, "font-InriaSans[InriaSans-Bold] text-lg text-white")
-export const InriaSmallText = styled(Text, "font-InriaSans[InriaSans-Light] text-base text-white")
+export const InterTextWeight400 = styled(Text, 'font-Inter[Inter-Regular] text-black');
+export const InterTextWeight500 = styled(Text, 'font-Inter[Inter-Medium] text-black');
+export const InterTextWeight600 = styled(Text, 'font-Inter[Inter-SemiBold] text-black');
+export const InterTextWeight700 = styled(Text, 'font-Inter[Inter-Bold] text-black');
 
 
