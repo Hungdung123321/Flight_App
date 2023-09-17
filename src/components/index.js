@@ -1,1 +1,2 @@
-export { default as AppTabView } from './AppTabView'
+export { default as AthTabView } from './AthTabView'
+export { default as AuthTabBar } from './AuthTabBar'

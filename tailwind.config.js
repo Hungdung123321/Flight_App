@@ -44,6 +44,7 @@ module.exports = {
         'gray': '#555555',
         'dark-gray': '#5A5A5A',
         'Raisin-black': '#1E1F24',
+        'o': '#EC441E'
       },
     },
 
