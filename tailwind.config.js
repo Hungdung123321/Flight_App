@@ -1,3 +1,4 @@
+// import { scale } from './src/constants/scale'
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -10,6 +11,7 @@ module.exports = {
         Inter: ['Inter-Bold', 'Inter-Medium', 'Inter-Regular', 'Inter-SemiBold'],
       },
       spacing: {
+        '0.125': '2px',
         '0.375': '6px',
         '0.5': '8px',
         '0.625': '10px',
@@ -24,6 +26,7 @@ module.exports = {
         '4': '62px',
         '5.125': '82px',
         '6': '96px',
+        '7': '112px',
         '8.5': '136px',
         '8.75': '140px',
         '9': '148px',
@@ -32,6 +35,7 @@ module.exports = {
         '11': '176px',
         '12': '186px',
         '14': '210px',
+        '15.5': '248px',
         '18': '288px',
         '19': '294px',
         '20': '310px',
@@ -42,9 +46,17 @@ module.exports = {
         'white': '#ffffff',
         'light-gray': '#EFEFEF',
         'gray': '#555555',
+        'Light-Silver': '#D9D9D9',
         'dark-gray': '#5A5A5A',
         'Raisin-black': '#1E1F24',
-        'o': '#EC441E'
+        'o': '#EC441E',
+        'Independence': '#4B5768',
+        'Platinum': '#E4E7EB',
+        'light-red': '#FAD3CA',
+        'Spanish-Gray': '#999999',
+        'Lavender': '#E6E1F2',
+        'Lotion': '#F9FBFA',
+        'SonicSilver': '#7C7270',
       },
     },
 

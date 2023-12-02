@@ -1,6 +1,13 @@
 export const COLORS = {
+    WHITE: '#FFFFFF',
+    GRAY: '#555555',
+    COOL_GRAY: '#928FA6',
     DARK_GRAY: '#5A5A5A',
+    LIGHT_GRAY: '#D3D3D3',
     BRILLIANT_AZURE: '#46A5FF',
     BLACK: '#000000',
     RAISIN_BLACK: '#232323',
+    ORIOLES_ORANGE: '#EC441E',
+    LIGHT_RED: '#FAD3CA',
+    SPANISH_GRAY: '#999999',
 }

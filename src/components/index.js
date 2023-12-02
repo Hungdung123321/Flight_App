@@ -1,2 +1,6 @@
 export { default as AthTabView } from './AthTabView'
 export { default as AuthTabBar } from './AuthTabBar'
+export { default as WaySelectionTabView } from './WaySelectionTabView'
+export { default as CardOffer } from './CardOffer'
+export { default as FlightResult } from './FlightResult'
+export { default as SeatType } from './SeatType'

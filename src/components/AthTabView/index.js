@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
 import { TabView } from 'react-native-tab-view';
-import { AUTH_FORM_ROUTES_TAB_VIEW, AUTH_FORM_TAB_VIEW_KEY } from '../../constants/dummydata';
-import { InterTextWeight600, StyledView } from '../ReactCores/ReactCoreStyled';
+import { AUTHFORM_TABVIEW_ROUTES, AUTHFORM_TABVIEW_KEY } from '../../constants/dummydata';
+import { StyledView } from '../ReactCores/ReactCoreStyled';
 import { Dimensions } from 'react-native';
 import AuthTabBar from '../AuthTabBar';
+import AuthEmailForm from '../AuthEmailForm';
+import AuthPhonNumberForm from '../AuthPhonNumberForm';
 
 const renderScene = ({ route }) => {
     switch (route.key) {
-        case AUTH_FORM_TAB_VIEW_KEY.EMAIL:
-            return <StyledView className=''><InterTextWeight600>helo1</InterTextWeight600></StyledView>;
-        case AUTH_FORM_TAB_VIEW_KEY.PHONE_NUMBER:
-            return <StyledView ><InterTextWeight600>helo2</InterTextWeight600></StyledView>;
+        case AUTHFORM_TABVIEW_KEY.EMAIL:
+            return <AuthEmailForm />;
+        case AUTHFORM_TABVIEW_KEY.PHONE_NUMBER:
+            return <AuthPhonNumberForm />;
     }
 };
 
@@ -19,7 +21,7 @@ const renderScene = ({ route }) => {
 const AthTabView = ({ Routes = [], ...restTabview }) => {
 
     const [index, setIndex] = useState(0);
-    const [routes] = useState(AUTH_FORM_ROUTES_TAB_VIEW)
+    const [routes] = useState(AUTHFORM_TABVIEW_ROUTES)
 
     const renderTabBar = (props) => {
         const { index, routes } = props.navigationState;
@@ -28,6 +30,7 @@ const AthTabView = ({ Routes = [], ...restTabview }) => {
             <StyledView className='flex-row mb-1.5'>
                 {
                     routes.map((route, i) => <AuthTabBar
+                        key={`${i}`}
                         labelText={route.title}
                         onPress={() => setIndex(i)}
                         classNameTextTabBar={`${index === i ? '!text-o' : ''}`}
@@ -47,6 +50,7 @@ const AthTabView = ({ Routes = [], ...restTabview }) => {
             renderScene={renderScene}
             renderTabBar={renderTabBar}
             swipeEnabled={false}
+            style={{ height: 260 }}
             {...restTabview}
         />
     )
